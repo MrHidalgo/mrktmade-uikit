@@ -1,0 +1,158 @@
+// SECTION :: START
+
+p.ui__title Accordion
+
+.ui__content
+	.ui__type-wrapper
+		div
+			.st.accordion
+				.accordion__box
+					.accordion__box-head
+						div
+							p.st.heading-small Item 1
+						div
+							svg.bi.bi-caret-down-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z')
+					.accordion__box-body
+						div
+							p.st.paragraphs-medium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis cumque debitis dignissimos ea, eos facere fugiat illo in incidunt inventore iste itaque necessitatibus nihil omnis perspiciatis quasi quis similique totam, ut? Assumenda, cumque maxime possimus quia repellat sint tempora?
+				.accordion__box
+					.accordion__box-head
+						div
+							p.st.heading-small Item 2
+						div
+							svg.bi.bi-caret-down-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z')
+					.accordion__box-body
+						div
+							p.st.paragraphs-medium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis cumque debitis dignissimos ea, eos facere fugiat illo in incidunt inventore iste itaque necessitatibus nihil omnis perspiciatis quasi quis similique totam, ut? Assumenda, cumque maxime possimus quia repellat sint tempora?
+				.accordion__box
+					.accordion__box-head
+						div
+							p.st.heading-small Item 3
+						div
+							svg.bi.bi-caret-down-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z')
+					.accordion__box-body
+						div
+							p.st.paragraphs-medium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis cumque debitis dignissimos ea, eos facere fugiat illo in incidunt inventore iste itaque necessitatibus nihil omnis perspiciatis quasi quis similique totam, ut? Assumenda, cumque maxime possimus quia repellat sint tempora?
+
+
+	.ui__table
+		p.ui__table-title ClassName
+		table
+			thead
+				tr
+					th Class
+					th DESCRIPTION
+			tbody
+				+tableRow(['.st.accordion'], '')
+
+	.ui__code
+		p.ui__code-title Code
+		+codePreview('code-html', 'HTML', `<div class="st accordion">
+	<div class="accordion__box">
+		<div class="accordion__box-head">
+			<div>
+				<p class="st heading-small">Item 1</p>
+			</div>
+			<div>
+				<svg class="bi bi-caret-down-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+					<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+				</svg>
+			</div>
+		</div>
+		<div class="accordion__box-body">
+			<div>
+				<p class="st paragraphs-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis cumque debitis dignissimos ea, eos facere fugiat illo in incidunt inventore iste itaque necessitatibus nihil omnis perspiciatis quasi quis similique totam, ut? Assumenda, cumque maxime possimus quia repellat sint tempora?</p>
+			</div>
+		</div>
+	</div>
+	<div class="accordion__box">
+		<div class="accordion__box-head">
+			<div>
+				<p class="st heading-small">Item 2</p>
+			</div>
+			<div>
+				<svg class="bi bi-caret-down-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+					<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+				</svg>
+			</div>
+		</div>
+		<div class="accordion__box-body">
+			<div>
+				<p class="st paragraphs-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis cumque debitis dignissimos ea, eos facere fugiat illo in incidunt inventore iste itaque necessitatibus nihil omnis perspiciatis quasi quis similique totam, ut? Assumenda, cumque maxime possimus quia repellat sint tempora?</p>
+			</div>
+		</div>
+	</div>
+	<div class="accordion__box">
+		<div class="accordion__box-head">
+			<div>
+				<p class="st heading-small">Item 3</p>
+			</div>
+			<div>
+				<svg class="bi bi-caret-down-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+					<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+				</svg>
+			</div>
+		</div>
+		<div class="accordion__box-body">
+			<div>
+				<p class="st paragraphs-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis cumque debitis dignissimos ea, eos facere fugiat illo in incidunt inventore iste itaque necessitatibus nihil omnis perspiciatis quasi quis similique totam, ut? Assumenda, cumque maxime possimus quia repellat sint tempora?</p>
+			</div>
+		</div>
+	</div>
+</div>`)
+		+codePreview('code-javascript', 'JS', `function accordionCB() {
+	if(!document.querySelector('.accordion__box-head')) return;
+
+	const accordionHeadArr = document.querySelectorAll('.accordion__box-head');
+
+	for(let i = 0; i < accordionHeadArr.length; i++) {
+		accordionHeadArr[i].addEventListener('click', (ev) => {
+			const el = ev.currentTarget;
+
+			for(let j = 0; j < document.querySelectorAll('.accordion__box-body').length; j++) {
+				document.querySelectorAll('.accordion__box-body')[j].style.display = 'none';
+			}
+			el.nextElementSibling.style.display = 'block';
+
+			for(let k = 0; k < accordionHeadArr.length; k++) {
+				accordionHeadArr[k].classList.remove('is-active');
+			}
+			el.classList.add('is-active');
+		}, false);
+	}
+}
+accordionCB();`)
+
+script.
+	function accordionCB() {
+		if(!document.querySelector('.accordion__box-head')) return;
+
+		const accordionHeadArr = document.querySelectorAll('.accordion__box-head');
+
+		for(let i = 0; i < accordionHeadArr.length; i++) {
+			accordionHeadArr[i].addEventListener('click', (ev) => {
+				const el = ev.currentTarget;
+
+				if(el.classList.contains('is-active')) {
+					el.classList.remove('is-active');
+					el.nextElementSibling.style.display = 'none';
+				} else {
+					for (let k = 0; k < accordionHeadArr.length; k++) {
+						accordionHeadArr[k].classList.remove('is-active');
+					}
+					el.classList.add('is-active');
+
+					for (let j = 0; j < document.querySelectorAll('.accordion__box-body').length; j++) {
+						document.querySelectorAll('.accordion__box-body')[j].style.display = 'none';
+					}
+					el.nextElementSibling.style.display = 'block';
+				}
+			}, false);
+		}
+	}
+	accordionCB();
+
+// SECTION :: END

@@ -1,0 +1,42 @@
+// SECTION :: START
+
+p.ui__title Primary colours
+p.ui__desc Customizing the default color palette for your project.
+
+.ui__content
+  .ui__color-wrapper
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #fff;')
+        .ui__color-body
+          p White
+          span #ffffff
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #000;')
+        .ui__color-body
+          p Black
+          span #000000
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.primary-white-bg', '.st.primary-white-color', '.st.primary-white-border'], 'Add one of these classes to apply a background-color, border-color or color')
+        +tableRow(['.st.primary-black-bg', '.st.primary-black-color', '.st.primary-black-border'], 'Add one of these classes to apply a background-color, border-color or color')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st primary-white-bg'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st primary-white-color'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st primary-white-border'></div>`)
+    +codePreview('code-css', 'CSS', `.st.primary-white-bg {\n  background-color: #21BF73;\n}`)
+    +codePreview('code-css', 'CSS', `.st.primary-white-color {\n  color: #21BF73;\n}`)
+    +codePreview('code-css', 'CSS', `.st.primary-white-border {\n  border-color: #21BF73;\n}`)
+
+
+// SECTION :: END

@@ -1,0 +1,27 @@
+// HEADER :: START
+
+.header {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+	background-color: #163a5f;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		height: 150px;
+		padding: 10px 50px 10px 250px;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 60px;
+		line-height: 80px;
+		color: #FFFFFF;
+	}
+}
+
+// HEADER :: END

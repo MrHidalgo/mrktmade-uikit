@@ -1,0 +1,42 @@
+// SECTION :: START
+
+p.ui__title List
+
+.ui__content
+	.ui__type-wrapper
+		div
+			.ui__type
+				ul.st.unordered-list
+					li
+						p.st.label-bold Lorem ipsum dolor sit amet.
+					li
+						p.st.label-bold Lorem ipsum dolor sit amet.
+					li
+						p.st.label-bold Lorem ipsum dolor sit amet.
+		div
+			.ui__type
+				ul.st.ordered-list
+					li
+						p.st.label-bold Lorem ipsum dolor sit amet.
+					li
+						p.st.label-bold Lorem ipsum dolor sit amet.
+					li
+						p.st.label-bold Lorem ipsum dolor sit amet.
+
+	.ui__table
+		p.ui__table-title ClassName
+		table
+			thead
+				tr
+					th Class
+					th DESCRIPTION
+			tbody
+				+tableRow(['.st.unordered-list'], 'Add this class to apply a unordered list.')
+				+tableRow(['.st.ordered-list'], 'Add this class to apply a ordered list.')
+
+	.ui__code
+		p.ui__code-title Code
+		+codePreview('code-html', 'HTML', `<ul class="st unordered-list"></ul>`)
+		+codePreview('code-html', 'HTML', `<ol class="st ordered-list"></ul>`)
+
+// SECTION :: END

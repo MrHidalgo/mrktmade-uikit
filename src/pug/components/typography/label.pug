@@ -1,0 +1,32 @@
+// SECTION :: START
+
+p.ui__title Labels
+
+.ui__content
+  .ui__type-wrapper
+    div
+      .ui__type
+        p.st.label Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party.
+        span L14
+    div
+      .ui__type
+        p.st.label-bold Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party.
+        span L14 - Bold
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.label'], 'Add this class to apply a large labels.')
+        +tableRow(['.st.label-bold'], 'Add this class to apply a bold labels.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st label'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st label-bold'></div>`)
+
+// SECTION :: END

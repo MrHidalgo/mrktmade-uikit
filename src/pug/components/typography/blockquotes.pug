@@ -1,0 +1,45 @@
+// SECTION :: START
+
+p.ui__title Blockquotes
+
+.ui__content
+	.ui__type-wrapper
+		div
+			blockquote.st.blockquote
+				p.st.heading-medium This is an example quotation that uses the blockquote tag.
+				p.st.label - Here is another line to make it look bigger.
+		div
+			blockquote.st.blockquote.blockquote--center
+				p.st.heading-medium This is an example quotation that uses the blockquote tag.
+				p.st.label!= "<em class='rb-em'>- Here is another line to make it look bigger.</em>"
+
+		div
+			blockquote.st.blockquote.blockquote--right
+				p.st.heading-medium This is an example quotation that uses the blockquote tag.
+				p.st.label - Here is another line to make it look bigger.
+
+
+	.ui__table
+		p.ui__table-title ClassName
+		table
+			thead
+				tr
+					th Class
+					th DESCRIPTION
+			tbody
+				+tableRow(['.st.blockquote'], 'For quoting blocks of content from another source within your document. Wrap .st.blockquote around any HTML as the quote.')
+				+tableRow(['.st.blockquote--center'], 'Use class modify as needed to change the alignment of your blockquote.')
+				+tableRow(['.st.blockquote--right'], 'Use class modify as needed to change the alignment of your blockquote.')
+
+	.ui__code
+		p.ui__code-title Code
+		+codePreview('code-html', 'HTML', `<blockquote class="st blockquote">
+	<p class="st heading-medium">This is an example quotation that uses the blockquote tag.</p>
+	<p class="st label">- Here is another line to make it look bigger.</p>
+</blockquote>`)
+		+codePreview('code-html', 'HTML', `<blockquote class="st blockquote blockquote--right">
+	<p class="st heading-medium">A well-known quote, contained in a blockquote element.</p>
+	<p><small class="st label">Someone famous in Source Title</small></p>
+</blockquote>`)
+
+// SECTION :: END

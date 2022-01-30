@@ -1,0 +1,219 @@
+// SECTION :: START
+
+p.ui__title Table
+
+.ui__content
+
+	.ui__table
+		p.ui__table-title ClassName
+		table
+			thead
+				tr
+					th Class
+					th DESCRIPTION
+			tbody
+				+tableRow(['.st.table'], 'Add .st.table to the table tag.')
+				+tableRow(['.st.table--nowrap', '.st.table--center'], 'Additional classes..')
+				+tableRow(['.st.table--striped'], 'Add .st.table--striped to the table tag for a striped table')
+				+tableRow(['.st.table--highlight'], 'Add .st.table--highlight to the table tag for a highlight table.')
+				+tableRow(['.st.table__overflow'], 'If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just wrap it inside a div element and add the .st.table__overflow class. This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.')
+				+tableRow(['.st.table--responsive'], 'Add .st.table--responsive to the table tag to make the table horizontally scrollable on smaller screen widths.')
+
+	.ui__type-wrapper
+		div
+			p.st.label Normal
+			table.st.table
+				thead
+					tr
+						th Name
+						th Item Name
+						th Item Price
+				tbody
+					tr
+						td Alvin
+						td Eclair
+						td $0.87
+					tr
+						td Alan
+						td Jellybean
+						td $3.76
+					tr
+						td Jonathan
+						td Lollipop
+						td $7.00
+		div
+			p.st.label Striped
+			table.st.table.table--striped
+				thead
+					tr
+						th Name
+						th Item Name
+						th Item Price
+				tbody
+					tr
+						td Alvin
+						td Eclair
+						td $0.87
+					tr
+						td Alan
+						td Jellybean
+						td $3.76
+					tr
+						td Jonathan
+						td Lollipop
+						td $7.00
+		div
+			p.st.label Highlight
+			table.st.table.table--highlight
+				thead
+					tr
+						th Name
+						th Item Name
+						th Item Price
+				tbody
+					tr
+						td Alvin
+						td Eclair
+						td $0.87
+					tr
+						td Alan
+						td Jellybean
+						td $3.76
+					tr
+						td Jonathan
+						td Lollipop
+						td $7.00
+		div
+			p.st.label Horizontal scroll
+			.st.table__overflow
+				table.st.table.table--nowrap
+					thead
+						tr
+							th Name
+							th Item Name
+							th Item Price
+							th Name
+							th Item Name
+							th Item Price
+							th Name
+							th Item Name
+							th Item Price
+							th Name
+							th Item Name
+							th Item Price
+							th Item Name
+							th Item Price
+							th Name
+							th Item Name
+							th Item Price
+					tbody
+						tr
+							td Alvin
+							td Eclair
+							td $0.87
+							td Alvin
+							td Eclair
+							td $0.87
+							td Alvin
+							td Eclair
+							td $0.87
+							td Alvin
+							td Eclair
+							td $0.87
+							td Eclair
+							td $0.87
+							td Alvin
+							td Eclair
+							td $0.87
+						tr
+							td Alan
+							td Jellybean
+							td $3.76
+							td Alan
+							td Jellybean
+							td $3.76
+							td Alan
+							td Jellybean
+							td $3.76
+							td Alan
+							td Jellybean
+							td $3.76
+							td Jellybean
+							td $3.76
+							td Alan
+							td Jellybean
+							td $3.76
+						tr
+							td Jonathan
+							td Lollipop
+							td $7.00
+							td Jonathan
+							td Lollipop
+							td $7.00
+							td Jonathan
+							td Lollipop
+							td $7.00
+							td Jonathan
+							td Lollipop
+							td $7.00
+							td Lollipop
+							td $7.00
+							td Jonathan
+							td Lollipop
+							td $7.00
+		div
+			p.st.label Modify responsive view
+			table.st.table.table--responsive
+				thead
+					tr
+						th Name
+						th Item Name
+						th Item Price
+						th Name
+						th Item Name
+						th Item Price
+				tbody
+					tr
+						td Alvin
+						td Eclair
+						td $0.87
+						td Alvin
+						td Eclair
+						td $0.87
+					tr
+						td Alan
+						td Jellybean
+						td $3.76
+						td Alan
+						td Jellybean
+						td $3.76
+					tr
+						td Jonathan
+						td Lollipop
+						td $7.00
+						td Jonathan
+						td Lollipop
+						td $7.00
+					tr
+						td Alvin
+						td Eclair
+						td $0.87
+						td Alvin
+						td Eclair
+						td $0.87
+					tr
+						td Alan
+						td Jellybean
+						td $3.76
+						td Alan
+						td Jellybean
+						td $3.76
+					tr
+						td Jonathan
+						td Lollipop
+						td $7.00
+						td Jonathan
+						td Lollipop
+						td $7.00
+
+// SECTION :: END
